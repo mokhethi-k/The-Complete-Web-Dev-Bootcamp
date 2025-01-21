@@ -1,8 +1,11 @@
-const fs = require("fs");
+
+const fs = require('fs');
 /*Uncomment this code to create a file of your own*/
+// const data = "Hello, This is the message from NOde JS!";
 
+// const filePath = 'data.txt';
 
-// fs.writeFile("data.txt", "I am from the nativr module", (err) =>{
+// fs.writeFile(filePath, data, (err) => {
 //     if (err) throw err;
 //     console.log("File was saved successfully!!!");
 // });
