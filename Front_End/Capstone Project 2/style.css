@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+.hero {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/brewhouse.jpg");
+    background-color: darkgrey;
+    padding: 0;
+    background-size: cover;
+    text-align: center;
+    color: ghostwhite;
+    height: 100vh;
+    width: 100%;
+}
+
+#about {
+    padding: 10px;
+}
+
+.about_me{
+    margin: 10%;
+}
+
+.about_me > h3 {
+    text-align: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: fixed; /* Makes the navbar fixed */
+    top: 0;         /* Sticks it to the top of the viewport */
+    right: 0;        /* Ensures it spans the entire width from the left */
+    width: 100%;    /* Ensures the navbar spans the full width */
+    z-index: 1000;  /* Keeps the navbar above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    .toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.resume {
+    padding: 10px;
+    margin: 30px;
+    
+}
+
+.resume_page > h2 {
+    padding-top: 80px;
+    text-align: center;
+    color: #11999e;
+}
+
+.resume > h3 {
+    color: #11999e;
+}
+
+.projects {
+    padding-top: 90px;
+}
+
+.face {
+    height: 700px;
+    width: 100%;
+}
+
+.filter {
+    padding: 20px;
+    margin: 30px;
+}
+
+.malt {
+    padding: 20px;
+    margin: 30px; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }

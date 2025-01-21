@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>projects</title>
+</head>
+<body class="projects">
+    <nav class="navbar">
+        <input type="checkbox" id="toggle" class="toggle">
+        <label for="toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="filter">
+        <h2>Main Beer Filter</h2>
+
+        <p>The project was about building a panel to control the main beer filter at the brewery. The closing and opening 
+    of the filter is controlled by a hydrolic power pack with two pressure switches. The aim was to acheive the following operation:
+    When the close push button is pressed, the filter should close and stop closing when a certain pressure is reached.
+    When the open push button is pressed, the filter should stop opening when a certain pressure is reached.
+        </p>
+        <p>
+            The push buttons are latched to avoid pressing the button untill the filter completely closed or opened,
+            which was happening before. The pressure switches were not used before and the filter operation was completely manual.
+            The panel is automated using S7-1200 PLC which was programmed by the PCE while I took care of the panel building and wiring.
+        </p>
+        <p>
+            The images below show the how the panel looked before and and how it looks after replacement.
+            I can also be seen that there is an improvement in terms of 5s in the panel.
+        </p>
+
+        <div class="gallery">
+            <img src="./images/complete_filter.jpg" alt="Image 1">
+            <img src="./images/f5.jpg" alt="Image 2">
+            <img src="./images/f4.jpg" alt="Image 3">
+            <img src="./images/f3.jpg" alt="Image 4">
+            <img src="./images/f2.jpg" alt="Image 5">
+            <img src="./images/f1.jpg" alt="Image 6">
+            <img src="./images/f6.jpg" alt="Image 7">
+        </div>
+    </div>  
+    <div  class="malt">
+        <h2>Malt Transfer Unit</h2>
+
+        <p>
+            This project was about replacing the old malt transfer unit, which was used to transfer malt from the bottom hopper to the top milling hopper.
+            This unit consists of seven motors of which six are controlled from a single pannel while one is controlled from another panel.
+            The aim of this project was to improve 5s in the panel to reduce troubleshooting time. The schematic diagram was also drawn using Eplan Software even though it was the 
+            education version.
+        </p>
+        <p>
+            The plan is to implement the automatic control of the panel through the use of an ET station that is connected to Brewhouse control systems, replace the unrated motors and enclosure to EX rated motors and enclosure.
+            The replacement to Ex rated components is a safety requirement by the company and the standards for explosive environments and Malt store is categorized under zone 20.
+        </p>
+        <p>
+            The images below shows how the panel looked and how it looks after replacement.
+        </p>
+    </div>
+    
+    <footer>
+        <p>© 2024 Kabelo Mokhethi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
