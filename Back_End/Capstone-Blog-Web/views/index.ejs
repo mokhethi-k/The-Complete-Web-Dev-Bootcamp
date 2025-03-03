@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Blok</title>
+</head>
+<body>
+    <header>
+        <div class="icon">
+            <h3><a href="/">KM</a></h3>
+        </div>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+        </ul>
+    </header>
+    <hr>
+
+    <ul>
+        <% blogs.forEach(blog => { %>
+            <li>
+                <h2><%= blog.title %></h2>
+                <p><%= blog.content %></p>
+                <form action="/delete/<%= blog.id %>" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+
+    <div class="new-blog">
+        <form action="/new">
+            <input type="submit" value="Create New Blog">
+        </form>
+    </div>
+    <hr>
+    <footer>
+        <p>Copyright &copy; 2025</p>
+    </footer>
+</body>
+</html>

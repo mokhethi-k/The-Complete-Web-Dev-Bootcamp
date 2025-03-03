@@ -1,0 +1,116 @@
+body {
+    margin: 2rem;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 0%;
+}
+
+header ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+    align-items: end;
+}
+
+header ul a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+header ul a:hover{
+    color: rgb(37, 102, 102);
+}
+
+.icon {
+    background-color: darkcyan;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+
+.icon h3 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.icon h3 a:hover {
+    color: rgb(161, 163, 165);
+}
+
+.new-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-blog input {
+    margin-top: 20px;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: darkcyan;
+    color: aliceblue;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+.new form {
+    background: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.new label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+.new input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.new button {
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.new button:hover {
+    background-color: darkcyan;
+}
+
+.new a {
+    display: inline-block;
+    margin-top: 15px;
+    color: darkcyan;
+    text-decoration: none;
+}
+
+.new a:hover {
+    text-decoration: underline;
+}
